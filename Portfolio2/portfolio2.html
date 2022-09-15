@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh - Portfolio</title>
+    <link rel="stylesheet" href="portfolio2.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <div class="head"><span>S</span>anthosh.</div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contacts</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="headerText">
+                  <p>Fontend Developer - UX/UI Designer</p>
+                  <h1>Hi, I'm <span>Santhosh</span><br> Pavadala From India</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About section starts -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Assets/cat.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subTitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quos enim reiciendis ut, fuga iusto ab maxime aspernatur quam odit earum corrupti culpa officiis! Quidem, molestias? Quos culpa minima perspiciatis.</p>
+                
+                    <div class="tabTitles">
+                        <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
+                        <p class="tabLinks" onclick="openTab('expereince')">Expereince</p>
+                        <p class="tabLinks" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tabContents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces.</li>
+                            <li><span>Web Development</span><br>Web App interfaces.</li>
+                            <li><span>App Development</span><br>Building Android/iOS interfaces.</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="expereince">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UX/UI Design Training at Naresh Institute.</li>
+                            <li><span>2019 - 2021</span><br>Team Lead At RMES India pvt.ltd</li>
+                            <li><span>2016 - 2017</span><br>Internship at eKART eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li><span>2015</span><br>B.tech From Global Institute Of Engg & Tech.</li>
+                            <li><span>2011</span><br>Intermediate From Web App interfaces</li>
+                            <li><span>2009</span><br>SSC From Sahithi Vidyalaya High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="portfolio2.js"></script>
+</body>
+</html>

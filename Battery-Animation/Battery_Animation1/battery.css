@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { background-color: #282833; }
+
+.battery2 { height: 110px; width: 280px; 
+    border: 8px solid #ffffff;
+    position: absolute;top: 0; bottom: 0; right: 0; left: 0; 
+    margin: auto; border-radius: 12px;
+    animation: border 4s infinite;
+}
+
+.battery2::before {
+    content: '';
+    height: 50px;
+    width: 20px;
+    position: absolute;
+    background-color: #ffffff;
+   right: -25px;
+   top: 0;
+   bottom: 0; 
+   margin: auto;
+   border-radius: 0 7px 7px 0;
+   animation: frontcharge 4s infinite;
+}
+
+.battery2::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    background-color: red;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: 50px 0 transparent,
+                100px 0 transparent,
+                150px 0 transparent,
+                200px 0 transparent;
+    animation: charge 4s infinite;
+}
+
+@keyframes charge {
+     22% {
+        box-shadow: 50px 0 red,
+                    100px 0 transparent,
+                    150px 0 transparent,
+                    200px 0 transparent;
+    }
+    /* 22% {
+        box-shadow: 50px 0 transparent,
+                    100px 0 transparent,
+                    150px 0 transparent,
+                    200px 0 transparent;
+    } */
+    25% {
+        box-shadow: 50px 0 red,
+                    100px 0 orange,
+                    150px 0 transparent,
+                    200px 0 transparent;
+    }
+    47% {
+        box-shadow: 50px 0 red,
+                    100px 0 orange,
+                    150px 0 transparent,
+                    200px 0 transparent;
+    }
+    50% {
+        box-shadow: 50px 0 red,
+                    100px 0 orange,
+                    150px 0 yellow,
+                    200px 0 transparent;
+    }
+    72% {
+        box-shadow: 50px 0 red,
+                    100px 0 orange,
+                    150px 0 yellow,
+                    200px 0 transparent;
+    }
+    75% {
+        box-shadow: 50px 0 red,
+                    100px 0 orange,
+                    150px 0 yellow,
+                    200px 0 transparent;
+    }
+    95% {
+        box-shadow: 50px 0 orange,
+                    100px 0 yellow,
+                    150px 0 limegreen,
+                    200px 0 green;
+    }
+
+}
+
+@keyframes border { 
+    22% { border: 8px solid red;}
+
+    /* 22% { border: 8px solid transparent;} */
+    25% {border: 8px solid orange;}
+    47% {border: 8px solid orange;}
+    50% {border: 8px solid yellow;}
+    72% {border: 8px solid yellow;}
+    75% {border: 8px solid limegreen;}
+    95% {border: 8px solid green;}
+}
+
+@keyframes frontcharge { 
+    22% {background-color: red;}
+    /* 22% {background-color: transparent;} */
+    25% {background-color:  orange;}
+    47% {background-color:  orange;}
+    50% {background-color:  yellow;}
+    72% {background-color:  yellow;}
+    75% {background-color:  limegreen;}
+    95% {background-color:  green;}
+}
+
